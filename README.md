@@ -28,9 +28,14 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ### `yarn start-api`
 Starts Api
-Please add virtual environment inside backend folder by running following command
+
+Please add virtual environment inside backend folder by running following commands
 ```
 python3 -m venv venv
 source venv/bin/activate
 ```
-The project needs api key
+The project needs api key. You can set API key on the environment as `API_KEY=1234` or add `.env` file with the same value.
+
+### Tentative Architecture
+![Alt text](/weatherapp.jpg?raw=true "Architecture")
+
