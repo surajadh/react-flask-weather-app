@@ -53,5 +53,8 @@ More tests can be added but the framework is there to test out multiple other ed
 1. To ensure discussion about the interface.
 2. Run `mypy` and catch type errors beforehand
 
+Application should look like the following after it runs. It builds on the existing react app styles
+
+![Alt text](/weather_app.gif?raw=true "Application")
 
 
