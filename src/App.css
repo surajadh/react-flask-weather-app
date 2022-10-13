@@ -13,6 +13,17 @@
   }
 }
 
+ul {
+  overflow-x:hidden;
+  white-space:nowrap; 
+  width: 100%;
+}
+
+li {
+  display:inline-block;
+  margin: 10px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
