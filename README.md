@@ -1,5 +1,7 @@
 ## Available Scripts
 
+## Frontend
+
 In the project directory, you can run:
 
 ### `yarn start`
@@ -25,7 +27,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-
+## Backend
 ### `yarn start-api`
 Starts Api
 
@@ -38,4 +40,18 @@ The project needs api key. You can set API key on the environment as `API_KEY=12
 
 ### Tentative Architecture
 ![Alt text](/weatherapp.jpg?raw=true "Architecture")
+
+### Run python tests
+run `pytest` inside backend folder
+
+Datalayer test is skipped because it makes actual request to API and we only have 500 calls for free tier. To run it unskip that test.
+
+More tests can be added but the framework is there to test out multiple other edge cases
+
+### Why use Protocol and Typings?
+
+1. To ensure discussion about the interface.
+2. Run `mypy` and catch type errors beforehand
+
+
 
