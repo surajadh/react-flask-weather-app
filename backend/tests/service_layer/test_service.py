@@ -219,7 +219,12 @@ class MockWeatherApi(WeatherApi):
     def api_get(self, params: Dict[str, str]) -> Dict[Any, Any]:
         return response
 
-
+# "high_temp": 33.5,
+#             "low_temp": 18.3,
 def test_get_min_max():
     service: Service = ServiceImpl(MockWeatherApi())
-    print(service.get_min_max({"zip": "1234"}))
+    response = service.get_min_max({"zip": "1234"})
+    assert len(response) == 5
+    assert response[0]['date'] == '2022-10-12'
+    assert response[0]['high'] == 33.5
+    assert response[0]['low'] == 18.3
