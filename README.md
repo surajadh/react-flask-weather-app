@@ -46,7 +46,7 @@ run `pytest` inside backend folder
 
 Datalayer test is skipped because it makes actual request to API and we only have 500 calls for free tier. To run it unskip that test.
 
-More tests can be added, I have added few key tests to validate things are working fine. The framework is there to test out multiple other edge cases
+More tests can be added, I have added few key tests to validate things are working fine. The existing test setup can be used to test out multiple other edge cases
 
 ### Why use Protocol and Typings?
 
