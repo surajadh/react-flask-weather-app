@@ -40,7 +40,8 @@ function App() {
   return (
       <div className="App">
         <header className="App-header">
-          <div> Please Enter Zip Code:
+          <div> 
+            <p>Please Enter Zip Code</p>
           <input
             type="text"
             value={zip}
@@ -50,12 +51,8 @@ function App() {
               return setZip(e.target.value)
             }}
           />
-          
-          <p>
-            <strong>{zip}</strong>
-          </p>
           <p>{error}</p>
-          <button onClick={handleClick}>Fetch data</button>
+          <button onClick={handleClick}>Get Data</button>
           <ul>{forecasts_display}</ul>
         </div>
       </header>
